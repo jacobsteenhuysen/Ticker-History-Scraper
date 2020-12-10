@@ -2,7 +2,10 @@ import pandas as pd
 import datetime as datetime
 
 df = pd.read_excel('C:/Users/Jacob Steenhuysen/Downloads/chip tickers.xlsx', sheet_name='Sheet1')
+#So just set up en excel file (not csv) and link the directory to above ^^^^^
 
+
+#You're going to need to title the top of the column as Ticker or else this whole thing wont work.
 tickers_list = df['Ticker'].tolist()
 data = pd.DataFrame(columns=tickers_list)
 
